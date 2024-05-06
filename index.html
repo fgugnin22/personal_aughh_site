@@ -5,6 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./menu.js"></script>
   </head>
-  <body></body>
+  <body class="bg-black min-h-screen">
+    <header>
+      <button id="open" class="w-12 h-12 lg:hidden m-4">
+        <svg class="fill-amber-100 stroke-amber-100" viewBox="0 0 24 24">
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 18L20 18"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M4 12L20 12"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+            <path d="M4 6L20 6" stroke-width="2" stroke-linecap="round"></path>
+          </g>
+        </svg>
+      </button>
+      <button id="close" class="w-12 h-12 lg:hidden left-4 top-4 absolute">
+        <svg
+          class="fill-amber-100 stroke-amber-100"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z"
+            ></path>
+          </g>
+        </svg>
+      </button>
+      <nav
+        class="lg:h-20 flex flex-row text-sm lg:text-base justify-end h-20 px-4 lg:justify-center items-center gap-4 lg:gap-10 text-amber-100 font-medium font-display"
+      >
+        <a class="hover:underline" href="#sum">Общее</a>
+        <a class="hover:underline" href="#exp">Опыт</a>
+        <a class="hover:underline" href="#tags">Навыки</a>
+        <a class="hover:underline" href="#contacts">Контакты</a>
+      </nav>
+    </header>
+    <div
+      class="flex flex-col lg:flex-row lg:items-start lg:justify-between items-center mx-[5%] mt-[3%] gap-10 lg:gap-0"
+    >
+      <h1 class="font-display text-5xl lg:text-7xl text-amber-100 mt-[5%]">
+        Гугнин Федор Алексеевич
+      </h1>
+      <img
+        class="max-h-[600px] w-4/5 lg:w-[initial]"
+        src="./alsome.jpg"
+        alt=""
+      />
+    </div>
+    <main>
+      <section
+        id="sum"
+        class="font-sans text-amber-100 container mx-auto mt-20 px-4"
+      >
+        <h2 class="font-display text-2xl lg:text-5xl text-left mb-3 lg:mb-6">
+          Общее
+        </h2>
+        <p class="lg:text-xl">
+          Студент 1 курса Московского политехнического университета,
+          fullstack-разработчик(ВКонтакте), быстро обучаюсь, новый материал
+          воспринимаю не как бремя, а как возможность получить новый опыт,
+          следую здоровому образу жизни.
+        </p>
+      </section>
+      <section
+        id="exp"
+        class="font-sans text-amber-100 container mx-auto mt-20 px-4 lg:text-xl"
+      >
+        <h2 class="font-display text-2xl lg:text-5xl text-left mb-3 lg:mb-6">
+          Опыт
+        </h2>
+        <p class="">Три составляющие опыта:</p>
+        <ul role="list" class="list-disc pl-6 mt-2 marker:bg-amber-100">
+          <li>Пет-проекты</li>
+          <li>Фриланс</li>
+          <li>Работа по договорённости</li>
+        </ul>
+        <ul role="list" class="list-decimal pl-6 mt-2 marker:bg-amber-100">
+          <li class="mt-2">
+            Пет-проекты есть как и совсем учебные, так и более серьезные
+            <a
+              target="_blank"
+              class="hover:underline"
+              href="https:turiki.tw1.ru"
+              >(ссылка).</a
+            >
+          </li>
+          <li>
+            Фриланс состоял из разработки функционала для сайта discord-бота с
+            аудиторией в 6000 серверов.
+          </li>
+          <li>
+            Работа по договорённости состояла из разработки платформы по
+            взаимодействию адвоката и предпринимателя.
+          </li>
+        </ul>
+      </section>
+      <section
+        id="tags"
+        class="font-sans text-amber-100 container mx-auto mt-20 px-4 lg:text-lg"
+      >
+        <h2 class="font-display text-2xl lg:text-5xl text-left mb-3 lg:mb-6">
+          Ключевые навыки
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div>
+            <p class="ml-1">- Frontend</p>
+            <ul role="list" class="list-disc pl-6 mt-2 marker:bg-amber-100">
+              <li>HTML/CSS/JS</li>
+              <li>Typescript</li>
+              <li>React</li>
+              <li>Redux+ReduxToolkit</li>
+              <li>TailwindCSS</li>
+              <li>Webpack/Vite</li>
+            </ul>
+          </div>
+          <div>
+            <p class="ml-1">- Backend</p>
+            <ul role="list" class="list-disc pl-6 mt-2 marker:bg-amber-100">
+              <li>Python</li>
+              <li>PHP</li>
+              <li>GoLang</li>
+              <li>NodeJS</li>
+              <li>Django+Django Rest Framework</li>
+              <li>Docker</li>
+              <li>SQL (MySQL, PostgreSQL, SQLite)</li>
+              <li>Nginx</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+          <div>
+            <p class="ml-1">- Desktop</p>
+            <ul role="list" class="list-disc pl-6 mt-2 marker:bg-amber-100">
+              <li>Electron.js</li>
+            </ul>
+          </div>
+          <div>
+            <p class="ml-1">- Другие</p>
+            <ul role="list" class="list-disc pl-6 mt-2 marker:bg-amber-100">
+              <li>Advanced English</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contacts"
+        class="font-sans text-amber-100 container mx-auto mt-20 px-4 text-lg lg:text-xl mb-8 lg:mb-20"
+      >
+        <h2 class="font-display text-2xl lg:text-5xl text-left mb-3 lg:mb-6">
+          Контакты
+        </h2>
+        <p>Telegram: @fedorgugnin</p>
+        <p class="hover:underline mt-1">
+          Электронная почта:
+          <a href="mailto:fedorgugnin22@gmail.com">fedorgugnin22@gmail.com</a>
+        </p>
+        <a
+          target="_blank"
+          href="https://github.com/fgugnin22"
+          class="mt-1 hover:underline block"
+        >
+          Github: github.com/fgugnin22
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
